@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake – Klassisch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>🐍 Snake</h1>
+
+      <section class="hud" aria-label="Spielstatus">
+        <p>Score: <span id="score">0</span></p>
+        <p>Status: <span id="status">Bereit</span></p>
+      </section>
+
+      <canvas
+        id="gameCanvas"
+        width="400"
+        height="400"
+        aria-label="Snake Spielfeld"
+        role="img"
+      ></canvas>
+
+      <div class="controls">
+        <button id="startBtn" type="button">Start / Restart</button>
+      </div>
+
+      <section class="help" aria-label="Steuerung">
+        <h2>Steuerung</h2>
+        <ul>
+          <li>Pfeiltasten oder WASD: Richtung ändern</li>
+          <li>Space: Pause / Resume</li>
+          <li>Kein direktes Rückwärtsdrehen möglich</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
